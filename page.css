@@ -1,25 +1,27 @@
-.background-img {
-    background-image: url('Assets/Imgs/Background/MaskGroup1.png');
-    opacity: 1;
-    width: 1920px;
-    height: 1080px;
+@font-face {
+    font-family: 'Gotham - Bold';
+    src: url(Assets/Fonts/Gotham/GothamHTF-Bold.otf);
 }
 
-h1 {
-    color: white;
-    font-weight: bold;
-    margin-top: 199px;
-    margin-left: 80px;
+@font-face {
+    font-family: 'Raleway - Medium';
+    src: url(Assets/Fonts/Raleway/Raleway-Medium.ttf);
 }
 
-h2 {
-    color: #2E606F;
+@font-face {
+    font-family: 'Raleway - Light';
+    src: url(Assets/Fonts/Raleway/Raleway-Light.ttf);
 }
 
-.rest-img {
-    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
-    width: 1920px;
-    height: 7279px;
+body {
+    margin: 0;
+}
+
+.mae {
+    top: 21px;
+    left: 93px;
+    position: fixed;
+    z-index: 9999;
 }
 
 .topnav {
@@ -28,4 +30,60 @@ h2 {
     position: fixed;
     background-color: #19272D;
     padding: 20px;
+    z-index: 9999;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Raleway - Medium';
+}
+
+.topnav span {
+    color: white;
+    font-size: large;
+    font-family: 'Raleway - Medium';
+}
+
+.background-img {
+    background-image: url('Assets/Imgs/Background/MaskGroup1.png');
+    opacity: 1;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+.Texto1 {
+    color: white;
+    font-weight: bold;
+    top: 100px;
+    left: 80px;
+    position: absolute;
+    font-size: 90px;
+    text-align: left;
+    font-family: 'Gotham - Bold';
+}
+
+.Texto2 {
+    color: white;
+    bottom: 80px;
+    left: 80px;
+    position: absolute;
+    font-size: 55px;
+    text-align: left;
+    font-family: 'Raleway - Light';
+}
+
+.rest-img {
+    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
+    width: 1920px;
+    height: 7279px;
+    margin: 0;
+}
+
+h2 {
+    color: #2E606F;
+    margin: 0;
+    font-family: 'Gotham - Bold';
 }
