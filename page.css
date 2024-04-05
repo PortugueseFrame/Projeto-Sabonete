@@ -1,5 +1,5 @@
 .background-img {
-    background: transparent url('Assets/Imgs/Background/MaskGroup1.png') 0% 0% no-repeat padding-box;
+    background-image: url('Assets/Imgs/Background/MaskGroup1.png');
     opacity: 1;
     width: 1920px;
     height: 1080px;
@@ -7,10 +7,25 @@
 
 h1 {
     color: white;
+    font-weight: bold;
+    margin-top: 199px;
+    margin-left: 80px;
+}
+
+h2 {
+    color: #2E606F;
 }
 
 .rest-img {
-    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%) 0% 0% no-repeat padding-box;;
+    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
     width: 1920px;
     height: 7279px;
+}
+
+.topnav {
+    right: 0;
+    top: 50px;
+    position: fixed;
+    background-color: #19272D;
+    padding: 20px;
 }
