@@ -1,0 +1,16 @@
+.background-img {
+    background: transparent url('Assets/Imgs/Background/MaskGroup1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 1920px;
+    height: 1080px;
+}
+
+h1 {
+    color: white;
+}
+
+.rest-img {
+    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%) 0% 0% no-repeat padding-box;;
+    width: 1920px;
+    height: 7279px;
+}
