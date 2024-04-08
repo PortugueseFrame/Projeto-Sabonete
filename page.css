@@ -29,16 +29,40 @@
         display: none;
     }
 
-    .navbar-left {
+    .topnav-left {
         display: block;
     }
 
-    .navbar-right {
+    .topnav-right {
         justify-content: flex-end;
         align-items: center;
         margin-right: 40px;
     }
 
+    .containerTexto{
+        height: 90% !important;
+
+    }
+
+    .Texto1 {
+        width: 75% !important;
+        font-size: 75px !important;
+        margin-left: 50px;
+    }
+    
+    .Texto2 {
+        width: 45% !important;
+        font-size: 35px !important;
+        margin-left: 50px;
+        margin-top: 50px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1850px) {
+    .Intro {
+        height: 1180px !important;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -48,7 +72,7 @@
 }
 
 @media only screen and (min-width: 821px) {
-    .navbar-left {
+    .topnav-left {
         display: none;
     }
 }
@@ -59,7 +83,7 @@ body {
 
 .Icon {
     top: 20px;
-    left: 90px;
+    left: 60px;
     position: fixed;
     z-index: 9999;
 }
@@ -76,24 +100,24 @@ body {
     align-items: center;
 }
 
-.navbar-left img {
+.topnav-left img {
     height: 45px;
     width: auto;
 }
 
-.navbar-right {
+.topnav-right {
     display: flex;
     align-items: center;
 }
 
-.navbar-right a {
+.topnav-right a {
     text-decoration: none;
     color: white;
     padding: 10px;
     font-family: 'Raleway - Medium';
 }
 
-.navbar-right span {
+.topnav-right span {
     color: white;
     font-size: large;
     font-family: 'Raleway - Medium';
@@ -108,22 +132,38 @@ body {
     position: relative;
     width: 100%;
     height: 1080px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTexto {
+    margin-top: 100px;
+    height: 90%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .Texto1 {
+    width: 700px;
+    height: 420px;
     color: white;
     font-weight: bold;
-    position: absolute;
     font-size: 90px;
     font-family: 'Gotham - Bold';
+    display: flex;
 }
 
 .Texto2 {
+    width: 30%;
+    margin-top: 100px;
     color: white;
-    position: absolute;
-    font-size: 55px;
+    font-size: 40px;
     font-family: 'Raleway - Light';
+    display: flex;
 }
+
 
 .rest-img {
     background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
@@ -139,16 +179,16 @@ h2 {
 }
 
 .containerBig {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 315px;
 }
-
   
   .containerMini {
+    width: 80%;
     background-color: white;
-    width: 1225px;
     height: 460px;
     margin-bottom: 75px;
 }
