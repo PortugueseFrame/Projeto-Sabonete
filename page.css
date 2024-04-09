@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: 'Gotham - Black';
+    src: url(Assets/Fonts/Gotham/GothamHTF-Black.otf);
+}
+
+@font-face {
+    font-family: 'Gotham - Medium';
+    src: url(Assets/Fonts/Gotham/GothamHTF-Medium.otf);
+}
+
+@font-face {
     font-family: 'Raleway - Medium';
     src: url(Assets/Fonts/Raleway/Raleway-Medium.ttf);
 }
@@ -67,7 +77,26 @@
 
 @media only screen and (max-width: 1080px) {
     .Intro {
-        background-image: url('Assets/Imgs/Background/Ipad_Mae_Hero@2x.png') !important;
+        background-image: url('Assets/Imgs/Background/bgIpad.png') !important;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .containerMini {
+        flex-direction: column !important;
+    }
+
+    .containerMini:nth-child(odd) {
+        margin: 5vw 10vw 5vh 0vw !important;
+    }
+
+    .containerMini:nth-child(even) {
+        margin: 5vw 0vw 5vh 10vw !important;
+    }
+
+    .containerMini img {
+        padding: 3.5vw 3.5vw 1.5vw 3.5vw !important;
+        
     }
 }
 
@@ -125,7 +154,7 @@ body {
 }
 
 .Intro {
-    background-image: url('Assets/Imgs/Background/MaskGroup1@2x.png');
+    background-image: url('Assets/Imgs/Background/bgMain2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,7 +194,7 @@ body {
 }
 
 
-.rest-img {
+.produtos {
     background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
     display: flex;
     justify-content: center;
@@ -179,16 +208,69 @@ h2 {
 }
 
 .containerBig {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 315px;
 }
   
-  .containerMini {
-    width: 80%;
+.containerMini {
+    display: flex;
     background-color: white;
-    height: 460px;
-    margin-bottom: 75px;
+    height: auto;
+    margin: 0vw 13vw 7vh 13vw;
+}
+
+.containerMini:nth-child(1) {
+    margin: 5vw 13vw 7vh 13vw;
+}
+
+.containerMini img {
+    padding: 4.5vw 0vw 4.5vw 4.5vw;
+}
+
+.txtProduto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2.5vw 3.5vw 2.5vw 1.5vw;
+}
+
+.txtProduto p:nth-child(1) {
+    font-family: 'Gotham - Bold';
+    font-size: 28px;
+    margin: 0;
+    padding-right: 1vw;
+}
+
+.txtProduto p:nth-child(3) {
+    font-family: 'Raleway - Medium';
+    font-size: 22px;
+    margin-top: 0;
+    color: #707070;
+}
+
+.txtProduto p:nth-child(4) {
+    font-family: 'Raleway - Light';
+    font-size: 20px;
+    margin: 0;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco p:nth-child(1) {
+    font-family: 'Gotham - Black';
+    font-size: 24px;
+    margin: 0;
+}
+
+.preco p:nth-child(2) {
+    font-family: 'Gotham - Medium';
+    font-size: 22px;
 }
