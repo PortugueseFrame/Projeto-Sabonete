@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Gotham - Book';
+    src: url(Assets/Fonts/Gotham/GothamHTF-Book.otf);
+}
+
+@font-face {
     font-family: 'Gotham - Black';
     src: url(Assets/Fonts/Gotham/GothamHTF-Black.otf);
 }
@@ -21,6 +26,11 @@
 @font-face {
     font-family: 'Raleway - Light';
     src: url(Assets/Fonts/Raleway/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway - Bold';
+    src: url(Assets/Fonts/Raleway/Raleway-Bold.ttf);
 }
 
 @media only screen and (max-width: 820px) {
@@ -55,26 +65,32 @@
     }
 
     .Texto1 {
-        width: 75% !important;
-        font-size: 75px !important;
-        margin-left: 50px;
+        width: 90% !important;
+        font-size: 12vw !important;
+        margin-left: 5vw;
+    }
+
+    .Texto1 p {
+        margin-bottom: 0;
     }
     
     .Texto2 {
-        width: 45% !important;
-        font-size: 35px !important;
-        margin-left: 50px;
-        margin-top: 50px !important;
+        width: 65% !important;
+        font-size: 30px !important;
+        margin-left: 5vw;
+        margin-top: 0 !important;
     }
 
 }
 
+
+
 @media only screen and (max-width: 1080px) {
     .Intro {
         background-image: url('Assets/Imgs/Background/bgIpad.png') !important;
-        height: 1180px !important;
+        height: 1180px;
     }
-    .SemNome {
+    .kitProdutos {
         background-image: url('Assets/Imgs/Background/prodTodos820.png') !important;
         height: 856px !important;
     }
@@ -87,17 +103,32 @@
     }
 
     .containerMini:nth-child(odd) {
-        margin: 3.5vh 20vw 5vh 5vw !important;
+        margin: 5vh 20vw 5vh 5vw;
     }
 
     .containerMini:nth-child(even) {
-        margin: 5vh 5vw 3.5vh 20vw !important;
+        margin: 5vh 5vw 5vh 20vw;
     }
 
     .infoProduto img {
         margin: 2vh 0vw !important;
     }
 
+}
+
+@media only screen and (max-width: 393px) {
+    .Intro {
+        height: 852px !important;
+        background-position-x: -120px !important;
+    }
+
+    .containerBig { 
+        justify-content: center;
+    }
+
+    .containerMini {
+        margin: 3vh 9vw !important;
+    }
 }
 
 @media only screen and (min-width: 821px) {
@@ -175,18 +206,14 @@ body {
 }
 
 .Texto1 {
-    width: 700px;
-    height: 420px;
     color: white;
     font-weight: bold;
     font-size: 90px;
     font-family: 'Gotham - Bold';
-    display: flex;
 }
 
 .Texto2 {
     width: 30%;
-    margin-top: 100px;
     color: white;
     font-size: 40px;
     font-family: 'Raleway - Light';
@@ -206,18 +233,17 @@ h2 {
 
 .containerBig { 
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
   
 .containerMini {
     display: flex;
     background-color: white;
-    margin: 0vh 13vw 7vh 13vw;
+    margin: 0vh 13vw 6.5vh 13vw;
 }
 
 .containerMini:nth-child(1) {
-    margin: 5vw 13vw 7vh 13vw;
+    margin: 5vw 13vw 6.5vh 13vw;
 }
 
 #prodRoxo, #prodVerde {
@@ -232,6 +258,7 @@ h2 {
 
 .infoProduto img {
     margin: 2vh 2vw;
+    max-width: 100%;
 }
 
 .txtProduto {
@@ -279,12 +306,87 @@ h2 {
     font-size: 22px;
 }
 
-.SemNome {
+.containerBig2 {
+    display: flex;
+    justify-content: center;
+}
+
+.kitProdutos {
     background-image: url('Assets/Imgs/Produtos/prodTodos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     width: 100%;
     height: 2019px;
+}
+
+.kitMini {
+    background-color: white;
+}
+
+.kitMiniTxt {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 2.5vw;
+}
+
+.kitMiniTxt p {
+    margin: 0;
+    font-family: 'Raleway - Bold';
+}
+
+.kitMiniTxt p:nth-child(1) {
+    font-family: 'Gotham - Bold';
+    font-size: 30px;
+    margin: 1vh 0vw;
+}
+
+.kitMiniTxt p:nth-child(3) {
+    font-family: 'Raleway - Medium';
+    font-size: 22px;
+    margin: 1vh 0vw;
+}
+
+.precoPeso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.precoPeso p:nth-child(1) {
+    font-family: 'Gotham - Black';
+    font-size: 40px;
+    margin-right: 1.5vw;
+}
+
+.precoPeso p:nth-child(2) {
+    font-family: 'Gotham - Book';
+    font-size: 25px;
+}
+
+#lista {
+    font-family: 'Raleway - Bold';
+    font-size: 20px;
+}
+
+.listSabonete p::after {
+    content: "+";
+    color: black;
+}
+
+hr {
+    width: 100%;
+}
+
+.novidades {
+    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
+    margin: 0;
+    max-width: 100%;
+}
+
+.novidades p {
+    margin: 0;
+    font-family: 'Gotham - Bold';
+    font-size: 10vw;
+    color: #2E606F;
 }
