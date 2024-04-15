@@ -66,7 +66,8 @@
 
     .Texto1 {
         width: 90% !important;
-        font-size: 12vw !important;
+        height: auto !important;
+        font-size: 10vw !important;
         margin-left: 5vw;
     }
 
@@ -75,7 +76,7 @@
     }
     
     .Texto2 {
-        width: 65% !important;
+        width: 45% !important;
         font-size: 30px !important;
         margin-left: 5vw;
         margin-top: 0 !important;
@@ -84,7 +85,7 @@
 }
 
 
-
+/*Media Query nos 1440px para uma melhor transição*/
 @media only screen and (max-width: 1080px) {
     .Intro {
         background-image: url('Assets/Imgs/Background/bgIpad.png') !important;
@@ -96,6 +97,7 @@
     }
 }
 
+/*Media Query nos 1440px para uma melhor transição*/
 @media only screen and (max-width: 1440px) {
     .infoProduto {
         flex-direction: column !important;
@@ -103,11 +105,11 @@
     }
 
     .containerMini:nth-child(odd) {
-        margin: 5vh 20vw 5vh 5vw;
+        margin: 5vh 20vw 5vh 5vw !important;
     }
 
     .containerMini:nth-child(even) {
-        margin: 5vh 5vw 5vh 20vw;
+        margin: 5vh 5vw 5vh 20vw !important;
     }
 
     .infoProduto img {
@@ -121,14 +123,14 @@
         height: 852px !important;
         background-position-x: -120px !important;
     }
-
+/* Centrar os containeres ao meio no Mobile (problemas com a especificidade dos elementos)
     .containerBig { 
         justify-content: center;
     }
 
     .containerMini {
         margin: 3vh 9vw !important;
-    }
+    } */
 }
 
 @media only screen and (min-width: 821px) {
@@ -206,10 +208,13 @@ body {
 }
 
 .Texto1 {
+    width: 700px;
+    height: 420px;
     color: white;
     font-weight: bold;
     font-size: 90px;
     font-family: 'Gotham - Bold';
+    display: flex;
 }
 
 .Texto2 {
@@ -218,6 +223,7 @@ body {
     font-size: 40px;
     font-family: 'Raleway - Light';
     display: flex;
+    margin-top: 8vh;
 }
 
 .produtos {
