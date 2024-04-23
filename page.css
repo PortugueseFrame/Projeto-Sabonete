@@ -66,6 +66,7 @@
 
 body {
     margin: 0;
+    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
 }
 
 .Icon {
@@ -96,7 +97,7 @@ body {
 
 .navbarExpanded.active {
     display: block;
-    opacity: 1; /* Show when active */
+    opacity: 1;
 }
 
 .navbarOptions {
@@ -184,8 +185,8 @@ body {
     display: flex;
 }
 
-.containerTexto {
-    margin-top: 140px;
+.containerText {
+    margin-top: 170px;
     max-height: 70%;
     width: 100%;
     display: flex;
@@ -194,7 +195,7 @@ body {
     margin-left: 80px;
 }
 
-.Texto1 {
+.Text1 {
     width: 700px;
     height: 420px;
     color: white;
@@ -206,11 +207,11 @@ body {
     text-shadow: 12px 12px 12px #00000029;
 }
 
-.Texto1 p {
+.Text1 p {
     margin: 0;
 }
 
-.Texto2 {
+.Text2 {
     width: 30%;
     color: white;
     font-size: 40px;
@@ -219,12 +220,11 @@ body {
     text-shadow: 12px 12px 12px #00000029;;
 }
 
-.produtos {
-    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
+.products {
     margin: 0;
 }
 
-.produtos h2 {
+.products h2 {
     color: #2E606F;
     margin: 0;
     font-family: 'Gotham';
@@ -254,7 +254,7 @@ body {
     margin: 45px 20px;
 }
 
-.infoProduto {
+.infoProduct {
     display: flex;
     flex-direction: row;
     padding: 35px;
@@ -262,26 +262,26 @@ body {
     max-height: 100%;
 }
 
-.infoProduto img {
+.infoProduct img {
     margin: 25px 25px;
     max-width: 40%;
 }
 
-.txtProduto {
+.txtProduct {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
 
-.txtProduto p:nth-child(1) {
+.txtProduct p:nth-child(1) {
     font-family: 'Gotham';
     font-weight: bold;
     font-size: 28px;
     margin: 0;
 }
 
-.txtProduto p:nth-child(3) {
+.txtProduct p:nth-child(3) {
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 22px;
@@ -289,21 +289,21 @@ body {
     color: #707070;
 }
 
-.txtProduto p:nth-child(4) {
+.txtProduct p:nth-child(4) {
     font-family: 'Raleway';
     font-weight: 300;
     font-size: 20px;
     margin: 0;
 }
 
-.preco {
+.price {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.preco p:nth-child(1) {
+.price p:nth-child(1) {
     font-family: 'Gotham';
     font-weight: 900;
     font-size: 24px;
@@ -311,13 +311,13 @@ body {
     margin-right: 1.5vw;
 }
 
-.preco p:nth-child(2) {
+.price p:nth-child(2) {
     font-family: 'Gotham';
     font-weight: 500;
     font-size: 22px;
 }
 
-#prodRoxo, #prodVerde {
+#prodPurple, #prodGreen {
     flex-direction: row-reverse;
 }
 
@@ -326,8 +326,8 @@ body {
     justify-content: flex-end;
 }
 
-.kitProdutos {
-    background-image: url('Assets/Imgs/Produtos/prodTodos.png');
+.kitProducts {
+    background-image: url('Assets/Imgs/Background/prodTodos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -354,7 +354,7 @@ body {
     font-weight: bold;
 }
 
-#tituloKit {
+#titleKit {
     font-family: 'Gotham';
     font-weight: bold;
     font-size: 30px;
@@ -368,57 +368,184 @@ body {
     margin: 1vh 0vw;
 }
 
-.precoPeso {
+.priceWeight {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.precoPeso p:nth-child(1) {
+.priceWeight p:nth-child(1) {
     font-family: 'Gotham';
     font-weight: 900;
     font-size: 40px;
     margin-right: 1.5vw;
 }
 
-.precoPeso p:nth-child(2) {
+.priceWeight p:nth-child(2) {
     font-family: 'Gotham';
     font-weight: normal;
     font-size: 25px;
 }
 
-.itemSabonete {
+.itemSoap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.listSabonete p {
+.listSoap p {
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 20px;
     max-width: 100%;
 }
 
-.listSabonete hr {
+.listSoap hr {
     width: 100%;
+    color: #355353;
 }
 
-.novidades {
-    background: transparent linear-gradient(90deg, #EFEFEF 0%, #EDEDED 100%);
+.latest {
     margin: 0;
     max-width: 100%;
 }
 
-.novidades p {
-    margin: 0;
+.latest p {
+    margin-top: 0;
+    margin-left: 95px;
     font-family: 'Gotham';
     font-weight: bold;
-    font-size: 10vw;
+    font-size: 100px;
     color: #2E606F;
 }
 
+.miniProducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 45px;
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.miniProducts img {
+    width: 100%;
+    height: auto;
+}
+
+.imgContainer {
+    position: relative;
+    text-align: center;
+}
+
+.bottom-left {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 11px;
+    left: 22px;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq h2 {
+    font-family: 'Gotham';
+    font-weight: 900;
+    font-size: 100px;
+    color: #2E606F;
+}
+
+.faq p {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faqRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.faqRow p {
+    margin: 0;
+}
+
+.faqColumn {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.itemFaq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqRow hr {
+    width: 100%;
+    color: #355353;
+}
+
+footer {
+    background-color: white;
+    height: 165px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: center;
+    width: 820px;
+    margin-top: 30px;
+}
+
+.footerDiv p, a {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 14px;
+    color:  #2E606F;
+}
+
+.footerDiv a {
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.infoFooter p {
+    margin: 5px
+}
+
+.copyrightDiv {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.copyrightDiv p {
+    margin: 0;
+}
 
 @media only screen and (min-width: 1025px) {
     .topnav-left {
@@ -450,23 +577,23 @@ body {
         background-image: url('Assets/Imgs/Background/bgIpad.png');
     }
 
-    .containerTexto {
+    .containerText {
         margin-left: 50px;
         margin-top: 150px;
         justify-content: flex-start;
     }
 
-    .Texto1 {
+    .Text1 {
         height: auto;
         font-size: 10vw;
         width: 80%;
     }
 
-    .Texto1 p {
+    .Text1 p {
         margin: 0;
     }
     
-    .Texto2 {
+    .Text2 {
         font-size: 30px;
         width: 30%;
     }
@@ -479,18 +606,19 @@ body {
         margin: 40px 60px 40px 180px;
     }
 
-    .infoProduto {
+    .infoProduct {
         flex-direction: column !important;
         align-items: flex-start;
     }
 
-    .infoProduto img {
+    .infoProduct img {
         max-width: 65%;
         margin-left: 0;
     }
 
-    .kitProdutos {
+    .kitProducts {
         background-image: url('Assets/Imgs/Background/prodTodos820.png');
+        height: 90vh;
     }
 
     .containerBig2 {
@@ -503,6 +631,39 @@ body {
         max-width: 65%;
     }
 
+    .latest p {
+        margin-top: 0;
+        margin-left: 40px;
+        font-size: 60px;
+        color: #2E606F;
+    }
+
+    .miniProducts {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .bottom-left {
+        font-size: 12px;
+        bottom: 7px;
+        left: 11px;
+    }
+
+    .faq h2 {
+        font-size: 60px;
+    }
+    
+    .faqRow {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .faqColumn {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -531,11 +692,11 @@ body {
         display: none;
     }
 
-    .containerTexto {
+    .containerText {
         margin-top: 150px;
     }
     
-    .Texto2 {
+    .Text2 {
         width: 80%;
         font-size: 30px;
     }
@@ -556,49 +717,49 @@ body {
         background-color: transparent;
     }
 
-    .infoProduto {
+    .infoProduct {
         align-items: center;
         padding: 5px;
     }
 
-    .infoProduto img {
+    .infoProduct img {
         margin: 0 0 20px 0;
         max-width: 70%;
         background-color: white;
         padding: 49px 20px;
     }
 
-    .txtProduto {
+    .txtProduct {
         align-items: center; 
         text-align: center;
     }
     
-    .txtProduto p:nth-child(1) {
+    .txtProduct p:nth-child(1) {
         font-size: 20px;
         margin-bottom: 10px;
         width: 195px;
     }
     
-    .txtProduto p:nth-child(3) {
+    .txtProduct p:nth-child(3) {
         font-size: 20px;
     }
     
-    .txtProduto p:nth-child(4) {
+    .txtProduct p:nth-child(4) {
         font-size: 18px;
     }
 
-    .preco {
+    .price {
         flex-direction: column;
         align-items: center;
     }
     
-    .preco p:nth-child(1) {
+    .price p:nth-child(1) {
         font-size: 24px;
         margin: 0;
         width: 70px;
     }
     
-    .preco p:nth-child(2) {
+    .price p:nth-child(2) {
         font-size: 20px;
         margin: 10px 0;
     }
@@ -613,7 +774,7 @@ body {
         max-width: 90%;
     }
 
-    #tituloKit {
+    #titleKit {
         font-size: 20px;
     }
     
@@ -621,26 +782,51 @@ body {
         font-size: 14px;
     }
     
-    .precoPeso p:nth-child(1) {
+    .priceWeight p:nth-child(1) {
         font-size: 21px;
     }
     
-    .precoPeso p:nth-child(2) {
+    .priceWeight p:nth-child(2) {
         font-size: 16px;
     }
     
-    .listSabonete p {
+    .listSoap p {
         font-size: 15px;
     }
 
-    .listSabonete p:nth-child(2) {
+    .listSoap p:nth-child(2) {
         font-size: 25px;
     }
 
-    .novidades p {
-        margin: 0;
+    .latest p {
+        margin-top: 0;
+        margin-left: 20px;
         font-size: 40px;
         color: #2E606F;
     }
-}
 
+    .miniProducts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .bottom-left {
+        bottom: 5px;
+        left: 8px;
+        text-align: left;
+    }
+
+    .faq h2 {
+        font-size: 40px;
+    }
+    
+    .faq p {
+        font-size: 15px;
+    }
+    
+    .faqColumn {
+        width: 90%;
+    }
+}
