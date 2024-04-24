@@ -234,6 +234,7 @@ body {
 }
 
 #header2-1 {
+    padding-top: 20px;
     margin-right: 320px;
 }
 
@@ -406,6 +407,19 @@ body {
     color: #355353;
 }
 
+.content, .contentFaq1, .contentFaq2 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    display: none;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.content.active, .contentFaq1.active, .contentFaq2.active {
+    display: block;
+}
+
 .latest {
     margin: 0;
     max-width: 100%;
@@ -489,6 +503,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .faqRow hr {
@@ -497,8 +512,8 @@ body {
 }
 
 footer {
+    display: flex;
     background-color: white;
-    height: 165px;
     margin-top: 120px;
     display: flex;
     align-items: center;
@@ -506,15 +521,16 @@ footer {
 }
 
 .footerDiv {
-    display: flex;
-    justify-content: center;
-    width: 820px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
     margin-top: 30px;
+    width: 45%;
 }
 
 .footerDiv p, a {
     font-family: 'Raleway';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
     color:  #2E606F;
 }
@@ -528,23 +544,45 @@ footer {
 .infoFooter {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+#infoFooterTitle {
+    font-weight: 500;
 }
 
 .infoFooter p {
     margin: 5px
 }
 
-.copyrightDiv {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    margin: 15px 0;
-    justify-content: space-between;
+#address {
+    align-items: flex-start;
 }
 
-.copyrightDiv p {
-    margin: 0;
+#socialNet {
+    align-items: flex-end;
+}
+
+.socialNetDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialNetDiv img {
+    margin: 14px;
+}
+
+.copyrightDiv {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -596,6 +634,18 @@ footer {
     .Text2 {
         font-size: 30px;
         width: 30%;
+    }
+
+    .products h2 {
+        font-size: 60px;
+    }
+    
+    #header2-1 {
+        margin-right: 175px;
+    }
+    
+    #header2-2 {
+        margin-right: 30px;
     }
 
     .containerMini:nth-child(odd) {
@@ -664,6 +714,15 @@ footer {
     .faqColumn {
         width: 60%;
     }
+
+    .footerDiv {
+        width: 95%;
+    }
+
+    .copyrightDiv {
+        width: 95%;
+    }
+    
 }
 
 @media only screen and (min-width: 769px) {
@@ -828,5 +887,59 @@ footer {
     
     .faqColumn {
         width: 90%;
+    }
+    
+    .footerDiv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        margin-top: 30px;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .footerDiv p, a {
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-size: 14px;
+        color:  #2E606F;
+    }
+    
+    .footerDiv a {
+        margin-top: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .infoFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-left: 20px;
+    }
+
+    .contactDiv {
+        margin-right: 80px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .socialNetDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .socialNetDiv img {
+        margin: 14px;
+    }
+    
+    .copyrightDiv {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
     }
 }

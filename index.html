@@ -24,9 +24,9 @@
                     <p onclick="toggleNavbarClose()">x</p>
                 </div>
                 <div class="navbarOptions">
-                    <a href="">QUEM SOMOS</a>
+                    <a>QUEM SOMOS</a>
                     <span> | </span>
-                    <a href="">CONTACTOS</a>
+                    <a onclick="scrollToBottom()">CONTACTOS</a>
                 </div>
             </div>
         </div>
@@ -36,9 +36,9 @@
                 <img src="Assets/Imgs/Background/iconMae1x.png" alt="Logo">
             </div>
             <div class="topnav-right">
-                <a href="">QUEM SOMOS</a>
+                <a>QUEM SOMOS</a>
                 <span> | </span>
-                <a href="">CONTACTOS</a>
+                <a onclick="scrollToBottom()">CONTACTOS</a>
             </div>
         </div>
 
@@ -171,11 +171,15 @@
                             <p>+</p>
                         </div>
                         <hr>
-                        <div class="itemSoap">
+                        <div class="itemSoap" onclick="toggleContent()">
                             <p>Sabonete de Chá Verde e Sândalo</p>
-                            <p>+</p>
+                            <p class="button">+</p>
                         </div>
                         <hr>
+                        <div class="content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                            magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,11 +242,17 @@
                     <p>+</p>
                 </div>
                 <hr>
-                <div class="itemFaq">
+                <div class="itemFaq" onclick="toggleContentFaq1()">
                     <p>Que Informação Recolhemos?</p>
-                    <p>+</p>
+                    <p class="buttonFaq1">+</p>
                 </div>
                 <hr>
+                <div class="contentFaq1">
+                    Recolhemos o seu nome, número de telefone, endereço postal, e-mail e idade para uso em campanhas de marketing, prémios e 
+                    newsletters. Além disso, quando efetuar uma compra no nosso site, recolhemos também informações sobre a morada de entrega e 
+                    detalhes do pagamento.<br>Podemos também recolher outras informações sobre a sua experiência no nosso site que contribuem 
+                    para a melhoria do nosso serviço. 
+                </div>
             </div>
             <div class="faqColumn">
                 <div class="itemFaq">
@@ -255,18 +265,25 @@
                     <p>+</p>
                 </div>
                 <hr>
-                <div class="itemFaq">
+                <div class="itemFaq" onclick="toggleContentFaq2()">
                     <p>Clientes Internacionais</p>
-                    <p>+</p>
+                    <p class="buttonFaq2">+</p>
                 </div>
                 <hr>
+                <div class="contentFaq2">
+                    A Mãe Bodycare rege-se pela legislação e autorizações de comercialização em vigor em Portugal e não se responsabiliza por 
+                    envios de artigos que não estão autorizados a serem comercializados no local de entrega. Nestes casos: <br><br> Se o envio 
+                    é efetuado via Correios Portugueses e, entra automaticamente em devolução, por motivos de não autorização de entrada da 
+                    mercadoria no país de destino, após a recepção da encomenda devida na nossa loja, reembolsamos o valor dos produtos deduzido
+                    de eventuais taxas aduaneiras portuguesas aplicadas, sob forma de vale de desconto.
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="footerDiv">
-            <div class="infoFooter" id="morada">
+            <div class="infoFooter" id="address">
                 <p id="infoFooterTitle">Morada</p>
                 <p>Rua Santa Teresa do Menino Jesus Nº6, 17º andar Miraflores 1495-048 Algés Portugal</p>
             </div>
@@ -274,16 +291,16 @@
                 <p id="infoFooterTitle">Email</p>
                 <p>fpg@fpg.pt</p>
             </div>
-            <div class="infoFooter">
-                <div class="contact">
+            <div class="infoFooter" id="contact">
+                <div class="contactDiv">
                     <p id="infoFooterTitle">Telefone sede</p>
                     <p>+351 214 123 780</p>
                 </div>
                 <a>Contacte-nos</a>
             </div>
-            <div class="infoFooter">
+            <div class="infoFooter" id="socialNet">
                 <p id="infoFooterTitle">Redes Sociais</p>
-                <div class="socialNet">
+                <div class="socialNetDiv">
                     <img src="Assets/Imgs/Social Network/iconFB.png">
                     <img src="Assets/Imgs/Social Network/iconYT.png">
                     <img src="Assets/Imgs/Social Network/iconIG.png">
