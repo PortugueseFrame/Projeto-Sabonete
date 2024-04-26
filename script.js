@@ -27,7 +27,6 @@ function scrollToBottom(timedelay=0) {
     }, timedelay);           
 }
 
-
 function toggleContent() {
     var content = document.querySelector('.content');
     var button = document.querySelector('.button');
@@ -54,3 +53,21 @@ function toggleContentFaq2() {
     content.style.display = content.classList.contains("active") ? "block" : "none";
     button.textContent = content.classList.contains("active") ? "-" : "+";
 }
+
+function toggleForm() {
+    var form = document.getElementsByTagName('form')[0];
+
+    if (form.style.display === 'none') {
+        form.style.display = 'flex';
+    } else {
+        form.style.display = 'none';
+    }
+}
+
+document.addEventListener('click', function(event) {
+    var form = document.getElementsByTagName('form')[0];
+    var target = event.target;
+    if (target !== form && !form.contains(target) && target.tagName.toLowerCase() !== 'a') {
+        form.style.display = 'none';
+    }
+});

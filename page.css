@@ -79,6 +79,7 @@ body {
 .miniNavbar {
     top: 35px;
     position: fixed;
+    z-index: 9999;
     right: 20px;
 }
 
@@ -89,6 +90,7 @@ body {
 .navbarExpanded {
     top: 35px;
     position: fixed;
+    z-index: 9999;
     right: 20px;
     background-color: #19272D;
     border-radius: 10%;
@@ -520,6 +522,77 @@ footer {
     flex-direction: column;
 }
 
+form {
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 270px;
+    width: 725px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 12px #00000029;
+}
+
+input {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    color: #2F5462;
+}
+
+form ::placeholder{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    color: #2F5462;
+}
+
+form input, textarea {
+    background-color: #EAEAEA;
+    border-color: transparent;
+    margin: 5px;
+}
+
+form p {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 20px;
+    color: #2F5462;
+    margin-bottom: 0;
+}
+
+.inputFields {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.inputFields input {
+    height: 30px;
+}
+
+.emailtelFields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+}
+
+#buttonSend {
+    width: 10%;
+    height: 30px;
+    background-color: #2E606F;
+    color: #CCD7DB;
+    border-color: transparent;
+    border-radius: 25px;
+    margin: 25px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 12px;
+}
+
 .footerDiv {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -887,6 +960,18 @@ footer {
     
     .faqColumn {
         width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+    
+    .emailtelFields {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #buttonSend {
+        width: 25%;
     }
     
     .footerDiv {

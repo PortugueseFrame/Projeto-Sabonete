@@ -133,7 +133,7 @@
         <div class="containerBig2">
             <div class="kitMini">
                 <div class="kitMiniTxt">
-                    <p id="tituloKit">Kit Miniaturas Sabonetes Clássicos</p>
+                    <p id="titleKit">Kit Miniaturas Sabonetes Clássicos</p>
 
                     <div class="priceWeight">
                         <p>35,00€</p><p>7 sabonetes, 65gr cada</p>
@@ -282,6 +282,25 @@
     </div>
 
     <footer>
+
+        <form>
+
+            <p>CONTACTE-NOS</p>
+
+            <div class="inputFields">
+                <input type="text" placeholder="Nome">
+                <div class="emailtelFields">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Telefone">
+                </div>
+
+                <textarea placeholder="Mensagem" rows="6"></textarea>
+            </div>
+            
+            <input type="submit" value="ENVIAR" id="buttonSend">
+
+        </form>
+
         <div class="footerDiv">
             <div class="infoFooter" id="address">
                 <p id="infoFooterTitle">Morada</p>
@@ -296,7 +315,7 @@
                     <p id="infoFooterTitle">Telefone sede</p>
                     <p>+351 214 123 780</p>
                 </div>
-                <a>Contacte-nos</a>
+                <a onclick="toggleForm()">Contacte-nos</a>
             </div>
             <div class="infoFooter" id="socialNet">
                 <p id="infoFooterTitle">Redes Sociais</p>
