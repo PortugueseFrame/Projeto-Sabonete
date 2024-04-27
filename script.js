@@ -1,14 +1,10 @@
-function toggleNavbarOpen() {
+function toggleNavbar() {
+    
+    var miniNavbar = document.getElementById('miniNavbar');
+    var navbarExpanded = document.getElementById('navbarExpanded');
 
-    document.getElementById('miniNavbar').style.display = 'none';
-    document.getElementById('navbarExpanded').style.display = 'block';
-
-}
-
-function toggleNavbarClose() {
-
-    document.getElementById('miniNavbar').style.display = 'block';
-    document.getElementById('navbarExpanded').style.display = 'none';
+    miniNavbar.style.display === 'none' ? miniNavbar.style.display = 'block' : miniNavbar.style.display = 'none';
+    navbarExpanded.style.display === 'block' ? navbarExpanded.style.display = 'none' : navbarExpanded.style.display = 'block';
 
 }
 
@@ -36,18 +32,9 @@ function toggleContent() {
     button.textContent = content.classList.contains("active") ? "-" : "+";
 }
 
-function toggleContentFaq1() {
-    var content = document.querySelector('.contentFaq1');
-    var button = document.querySelector('.buttonFaq1');
-
-    content.classList.toggle("active");
-    content.style.display = content.classList.contains("active") ? "block" : "none";
-    button.textContent = content.classList.contains("active") ? "-" : "+";
-}
-
-function toggleContentFaq2() {
-    var content = document.querySelector('.contentFaq2');
-    var button = document.querySelector('.buttonFaq2');
+function toggleContentFaq(contentClass, buttonClass) {
+    var content = document.querySelector('.' + contentClass);
+    var button = document.querySelector('.' + buttonClass);
 
     content.classList.toggle("active");
     content.style.display = content.classList.contains("active") ? "block" : "none";

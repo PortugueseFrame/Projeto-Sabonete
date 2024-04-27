@@ -15,13 +15,13 @@
                 <img src="Assets/Imgs/Background/iconMae21x.png">
             </div>
 
-            <div class="miniNavbar" id="miniNavbar" onclick="toggleNavbarOpen()">
+            <div class="miniNavbar" id="miniNavbar" onclick="toggleNavbar()">
                 <img src="Assets/Imgs/Background/iconNav1x.png">
             </div>
-
+            
             <div class="navbarExpanded" id="navbarExpanded">
                 <div class="cross">
-                    <p onclick="toggleNavbarClose()">x</p>
+                    <p onclick="toggleNavbar()">x</p>
                 </div>
                 <div class="navbarOptions">
                     <a>QUEM SOMOS</a>
@@ -242,7 +242,7 @@
                     <p>+</p>
                 </div>
                 <hr>
-                <div class="itemFaq" onclick="toggleContentFaq1()">
+                <div class="itemFaq" onclick="toggleContentFaq('contentFaq1', 'buttonFaq1')">
                     <p>Que Informação Recolhemos?</p>
                     <p class="buttonFaq1">+</p>
                 </div>
@@ -265,7 +265,7 @@
                     <p>+</p>
                 </div>
                 <hr>
-                <div class="itemFaq" onclick="toggleContentFaq2()">
+                <div class="itemFaq" onclick="toggleContentFaq('contentFaq2', 'buttonFaq2')">
                     <p>Clientes Internacionais</p>
                     <p class="buttonFaq2">+</p>
                 </div>
