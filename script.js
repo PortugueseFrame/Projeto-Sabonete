@@ -23,16 +23,7 @@ function scrollToBottom(timedelay=0) {
     }, timedelay);           
 }
 
-function toggleContent() {
-    var content = document.querySelector('.content');
-    var button = document.querySelector('.button');
-
-    content.classList.toggle("active");
-    content.style.display = content.classList.contains("active") ? "block" : "none";
-    button.textContent = content.classList.contains("active") ? "-" : "+";
-}
-
-function toggleContentFaq(contentClass, buttonClass) {
+function toggleContent(contentClass, buttonClass) {
     var content = document.querySelector('.' + contentClass);
     var button = document.querySelector('.' + buttonClass);
 
