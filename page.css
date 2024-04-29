@@ -59,6 +59,7 @@ body {
 }
 
 .navbarExpanded {
+    animation: fadeIn 0.5s ease-in-out;
     top: 35px;
     position: fixed;
     z-index: 9999;
