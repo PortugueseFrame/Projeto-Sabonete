@@ -1,10 +1,10 @@
+
 @font-face {
     font-family: 'Gotham';
     src: url('Assets/Fonts/Gotham/GothamHTF-Book.woff2') format('woff2'),
         url('Assets/Fonts/Gotham/GothamHTF-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -13,7 +13,6 @@
         url('Assets/Fonts/Gotham/GothamHTF-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -29,38 +28,6 @@
     src: url('Assets/Fonts/Gotham/GothamHTF-Medium.woff2') format('woff2'),
         url('Assets/Fonts/Gotham/GothamHTF-Medium.woff') format('woff');
     font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Assets/Fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
-        url('Assets/Fonts/Raleway/Raleway-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Assets/Fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
-        url('Assets/Fonts/Raleway/Raleway-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Assets/Fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
-        url('Assets/Fonts/Raleway/Raleway-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Assets/Fonts/Raleway/Raleway-Light.woff2') format('woff2'),
-        url('Assets/Fonts/Raleway/Raleway-Light.woff') format('woff');
-    font-weight: 300;
     font-style: normal;
 }
 
