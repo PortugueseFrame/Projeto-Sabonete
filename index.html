@@ -17,9 +17,28 @@
 
     <div class="Intro">
 
-        <div class="topnav2">
+        <div class="topnavMain">
+
             <div class="Icon">
                 <img src="Assets/Imgs/Background/iconMae21x.png">
+            </div>
+
+            <div class="topnav-left">
+                <img src="Assets/Imgs/Background/iconMae1x.png">
+            </div>
+
+            <div class="topnav-right">
+                <a>QUEM SOMOS</a>
+                <span> | </span>
+                <a onclick="scrollToBottom()">CONTACTOS</a>
+            </div>
+
+        </div>
+
+        <div class="topnavMobile">
+
+            <div class="IconMobile">
+                <img src="Assets/Imgs/Background/iconMae1x.png">
             </div>
 
             <div class="miniNavbar" id="miniNavbar" onclick="toggleNavbar()">
@@ -36,22 +55,12 @@
                     <a onclick="scrollToBottom()">CONTACTOS</a>
                 </div>
             </div>
-        </div>
-    
-        <div class="topnav">
-            <div class="topnav-left">
-                <img src="Assets/Imgs/Background/iconMae1x.png" alt="Logo">
-            </div>
-            <div class="topnav-right">
-                <a>QUEM SOMOS</a>
-                <span> | </span>
-                <a onclick="scrollToBottom()">CONTACTOS</a>
-            </div>
+
         </div>
 
         <div class="containerText">
             <div class="Text1">
-                <p>O SABONETE QUE FAZ ESPUMA NA ÁGUA DO MAR</p>
+                <h1>O SABONETE QUE FAZ ESPUMA NA ÁGUA DO MAR</h1>
             </div>
             <div class="Text2">
                 <p>Suave na sua pele e inofensivo para o meio ambiente.</p>
@@ -149,44 +158,82 @@
 
                     <p>Uma coleção de miniaturas, para quem não se consegue decidir por um só sabonete!</p>
                     <div class="listSoap">
-                        <div class="itemSoap">
-                            <p>Sabonete de Chá Verde e Sândalo</p>
-                            <p>+</p>
-                        </div>
-                        <hr>
-                        <div class="itemSoap">
-                            <p>Sabonete de Mel e Cera de Abelhas</p>
-                            <p>+</p>
-                        </div>
-                        <hr>
-                        <div class="itemSoap">
-                            <p>Sabonete de Tangerina e Cardamomo</p>
-                            <p>+</p>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
                             </div>
-                        <hr>
-                        <div class="itemSoap">
-                            <p>Sabonete de Groselha Preta e Folha de Tomate</p>
-                            <p>+</p>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
                         </div>
-                        <hr>
-                        <div class="itemSoap">
-                            <p>Peónia e Neroli</p>
-                            <p>+</p>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
                         </div>
-                        <hr>
-                        <div class="itemSoap">
-                            <p>Alfazema e Erva Príncipe</p>
-                            <p>+</p>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
                         </div>
-                        <hr>
-                        <div class="itemSoap" onclick="toggleContent('content', 'button')">
-                            <p>Sabonete de Chá Verde e Sândalo</p>
-                            <p class="button">+</p>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
                         </div>
-                        <hr>
-                        <div class="content">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
-                            magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
+                        </div>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
+                        </div>
+                        <div class="itemGroup">
+                            <div class="itemSoap">
+                                <p>Sabonete de Chá Verde e Sândalo</p>
+                                <p class="buttonToggle">+</p>
+                            </div>
+                            <hr>
+                            <div class="contentToggle">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, provident totam debitis blanditiis harum voluptas 
+                                magni accusantium esse nam aut, omnis veniam temporibus? Suscipit, ipsum quas nihil sed temporibus et?
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +244,7 @@
 
     <div class="latest">
         
-        <p>novidades</p>
+        <h2>novidades</h2>
 
         <div class="miniProducts">
             <div class="imgContainer">
@@ -241,50 +288,88 @@
 
         <div class="faqRow">
             <div class="faqColumn">
-                <div class="itemFaq">
-                    <p>Condições Gerais</p>
-                    <p>+</p>
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Condições Gerais</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        Recolhemos o seu nome, número de telefone, endereço postal, e-mail e idade para uso em campanhas de marketing, prémios e 
+                        newsletters. Além disso, quando efetuar uma compra no nosso site, recolhemos também informações sobre a morada de entrega e 
+                        detalhes do pagamento.<br>Podemos também recolher outras informações sobre a sua experiência no nosso site que contribuem 
+                        para a melhoria do nosso serviço. 
+                    </div>
                 </div>
-                <hr>
-                <div class="itemFaq">
-                    <p>Política de Privacidade</p>
-                    <p>+</p>
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Política de Privacidade</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        Recolhemos o seu nome, número de telefone, endereço postal, e-mail e idade para uso em campanhas de marketing, prémios e 
+                        newsletters. Além disso, quando efetuar uma compra no nosso site, recolhemos também informações sobre a morada de entrega e 
+                        detalhes do pagamento.<br>Podemos também recolher outras informações sobre a sua experiência no nosso site que contribuem 
+                        para a melhoria do nosso serviço. 
+                    </div>
                 </div>
-                <hr>
-                <div class="itemFaq" onclick="toggleContent('contentFaq1', 'buttonFaq1')">
-                    <p>Que Informação Recolhemos?</p>
-                    <p class="buttonFaq1">+</p>
-                </div>
-                <hr>
-                <div class="contentFaq1">
-                    Recolhemos o seu nome, número de telefone, endereço postal, e-mail e idade para uso em campanhas de marketing, prémios e 
-                    newsletters. Além disso, quando efetuar uma compra no nosso site, recolhemos também informações sobre a morada de entrega e 
-                    detalhes do pagamento.<br>Podemos também recolher outras informações sobre a sua experiência no nosso site que contribuem 
-                    para a melhoria do nosso serviço. 
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Que Informação Recolhemos?</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        Recolhemos o seu nome, número de telefone, endereço postal, e-mail e idade para uso em campanhas de marketing, prémios e 
+                        newsletters. Além disso, quando efetuar uma compra no nosso site, recolhemos também informações sobre a morada de entrega e 
+                        detalhes do pagamento.<br>Podemos também recolher outras informações sobre a sua experiência no nosso site que contribuem 
+                        para a melhoria do nosso serviço. 
+                    </div>
                 </div>
             </div>
             <div class="faqColumn">
-                <div class="itemFaq">
-                    <p>Como são usados os dados recolhidos?</p>
-                    <p>+</p>
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Como são usados os dados recolhidos?</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        A Mãe Bodycare rege-se pela legislação e autorizações de comercialização em vigor em Portugal e não se responsabiliza por 
+                        envios de artigos que não estão autorizados a serem comercializados no local de entrega. Nestes casos: <br><br> Se o envio 
+                        é efetuado via Correios Portugueses e, entra automaticamente em devolução, por motivos de não autorização de entrada da 
+                        mercadoria no país de destino, após a recepção da encomenda devida na nossa loja, reembolsamos o valor dos produtos deduzido
+                        de eventuais taxas aduaneiras portuguesas aplicadas, sob forma de vale de desconto.
+                    </div>
                 </div>
-                <hr>
-                <div class="itemFaq">
-                    <p>Atualização dos seus dados</p>
-                    <p>+</p>
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Atualização dos seus dados</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        A Mãe Bodycare rege-se pela legislação e autorizações de comercialização em vigor em Portugal e não se responsabiliza por 
+                        envios de artigos que não estão autorizados a serem comercializados no local de entrega. Nestes casos: <br><br> Se o envio 
+                        é efetuado via Correios Portugueses e, entra automaticamente em devolução, por motivos de não autorização de entrada da 
+                        mercadoria no país de destino, após a recepção da encomenda devida na nossa loja, reembolsamos o valor dos produtos deduzido
+                        de eventuais taxas aduaneiras portuguesas aplicadas, sob forma de vale de desconto.
+                    </div>
                 </div>
-                <hr>
-                <div class="itemFaq" onclick="toggleContent('contentFaq2', 'buttonFaq2')">
-                    <p>Clientes Internacionais</p>
-                    <p class="buttonFaq2">+</p>
-                </div>
-                <hr>
-                <div class="contentFaq2">
-                    A Mãe Bodycare rege-se pela legislação e autorizações de comercialização em vigor em Portugal e não se responsabiliza por 
-                    envios de artigos que não estão autorizados a serem comercializados no local de entrega. Nestes casos: <br><br> Se o envio 
-                    é efetuado via Correios Portugueses e, entra automaticamente em devolução, por motivos de não autorização de entrada da 
-                    mercadoria no país de destino, após a recepção da encomenda devida na nossa loja, reembolsamos o valor dos produtos deduzido
-                    de eventuais taxas aduaneiras portuguesas aplicadas, sob forma de vale de desconto.
+                <div class="itemGroup">
+                    <div class="itemFaq">
+                        <p>Clientes Internacionais</p>
+                        <p class="buttonToggle">+</p>
+                    </div>
+                    <hr>
+                    <div class="contentToggle">
+                        A Mãe Bodycare rege-se pela legislação e autorizações de comercialização em vigor em Portugal e não se responsabiliza por 
+                        envios de artigos que não estão autorizados a serem comercializados no local de entrega. Nestes casos: <br><br> Se o envio 
+                        é efetuado via Correios Portugueses e, entra automaticamente em devolução, por motivos de não autorização de entrada da 
+                        mercadoria no país de destino, após a recepção da encomenda devida na nossa loja, reembolsamos o valor dos produtos deduzido
+                        de eventuais taxas aduaneiras portuguesas aplicadas, sob forma de vale de desconto.
+                    </div>
                 </div>
             </div>
         </div>

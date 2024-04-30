@@ -8,6 +8,7 @@ function toggleNavbar() {
 
 }
 
+
 function scrollToBottom(timedelay=0) {
     var scrollId;
     var height = 0;
@@ -23,23 +24,22 @@ function scrollToBottom(timedelay=0) {
     }, timedelay);           
 }
 
-function toggleContent(contentClass, buttonClass) {
-    var content = document.querySelector('.' + contentClass);
-    var button = document.querySelector('.' + buttonClass);
-
-    content.classList.toggle("active");
-    content.style.display = content.classList.contains("active") ? "block" : "none";
-    button.textContent = content.classList.contains("active") ? "-" : "+";
-}
+document.querySelectorAll('.buttonToggle').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var contentToggle = this.closest('.itemGroup').querySelector('.contentToggle');
+        
+        if (contentToggle) {
+            contentToggle.classList.toggle("active");
+            contentToggle.style.display = contentToggle.classList.contains("active") ? "block" : "none";
+            this.textContent = contentToggle.classList.contains("active") ? "-" : "+";
+        }
+    });
+});
 
 function toggleForm() {
     var form = document.getElementsByTagName('form')[0];
 
-    if (form.style.display === 'none') {
-        form.style.display = 'flex';
-    } else {
-        form.style.display = 'none';
-    }
+    form.style.display === "none" ? form.style.display = 'flex' : form.style.display = 'none';
 }
 
 document.addEventListener('click', function(event) {

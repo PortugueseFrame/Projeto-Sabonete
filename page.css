@@ -39,11 +39,57 @@ body {
     margin-right: auto;
 }
 
-.Icon {
-    top: 20px;
-    left: 60px;
+.Intro {
+    background-image: url('Assets/Imgs/Background/bgMain2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+
+.topnavMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50px;
     position: fixed;
     z-index: 9999;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.Icon {
+    padding-left: 80px;
+}
+
+.topnav-left img {
+    padding: 25px;
+}
+
+.topnav-right {
+    display: flex;
+    align-items: center;
+    background-color: #19272D;
+    padding: 20px;
+}
+
+.topnav-right a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+.topnav-right span {
+    color: white;
+    font-size: large;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    margin: 0 5px;
 }
 
 .miniNavbar {
@@ -109,89 +155,38 @@ body {
     transform: rotate(90deg);
 }
 
-.topnav {
-    top: 50px;
-    right: 0;
-    position: fixed;
-    background-color: #19272D;
-    padding: 20px;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.topnav-left img {
-    height: 45px;
-    width: auto;
-}
-
-.topnav-right {
-    display: flex;
-    align-items: center;
-}
-
-.topnav-right a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    font-family: 'Raleway';
-    font-weight: 500;
-}
-
-.topnav-right span {
-    color: white;
-    font-size: large;
-    font-family: 'Raleway';
-    font-weight: 500;
-    font-style: normal;
-    margin: 0 5px;
-}
-
-.Intro {
-    background-image: url('Assets/Imgs/Background/bgMain2x.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
 
 .containerText {
-    margin-top: 170px;
-    max-height: 70%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-left: 80px;
+    margin-bottom: 80px;
 }
 
 .Text1 {
-    width: 700px;
-    height: 420px;
+    max-width: 700px;
     color: white;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 40px;
     font-family: 'Gotham';
     font-weight: bold;
     display: flex;
     text-shadow: 12px 12px 12px #00000029;
 }
 
-.Text1 p {
+.Text1 h1 {
     margin: 0;
 }
 
 .Text2 {
-    width: 30%;
+    max-width: 320px;
     color: white;
     font-size: 40px;
     font-family: 'Raleway';
     font-weight: 300;
-    text-shadow: 12px 12px 12px #00000029;;
+    text-shadow: 12px 12px 12px #00000029;
+    margin-top: 120px;
 }
 
 .products {
@@ -314,7 +309,9 @@ body {
     background-color: white;
     max-width: 625px;
     margin-right: 335px;
-    margin-top: 100px
+    margin-top: 100px;
+    position: absolute;
+    z-index: 2;
 }
 
 .kitMiniTxt {
@@ -376,11 +373,14 @@ body {
     max-width: 100%;
 }
 
+.buttonToggle {
+    cursor: pointer;
+}
+
 .listSoap hr {
     width: 100%;
     color: #355353;
 }
-
 
 @keyframes fadeIn {
     from {
@@ -391,7 +391,7 @@ body {
     }
 }
 
-.content, .contentFaq1, .contentFaq2 {
+.contentToggle {
     animation: fadeIn 0.5s ease-in-out;
     font-family: 'Raleway';
     font-weight: 500;
@@ -401,7 +401,7 @@ body {
     margin-bottom: 15px;
 }
 
-.content.active, .contentFaq1.active, .contentFaq2.active {
+.contentToggle.active {
     display: block;
 }
 
@@ -410,7 +410,7 @@ body {
     max-width: 100%;
 }
 
-.latest p {
+.latest h2 {
     margin-top: -65px;
     margin-left: 95px;
     font-family: 'Gotham';
@@ -652,23 +652,14 @@ form p {
 }
 
 @media only screen and (max-width: 1024px) {
-    .topnav {
+    .topnavMain {
         top: 0;
-        position: fixed;
-        right: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px;
         background-color: #19272D;
         z-index: 9999;
     }
 
     .Icon {
         display: none;
-    }
-
-    .topnav-right {
-        margin-right: 40px;
     }
 
     .Intro {
@@ -683,17 +674,18 @@ form p {
 
     .Text1 {
         height: auto;
-        font-size: 10vw;
-        width: 80%;
+        font-size: 40px;
+        max-width: 600px;
     }
 
-    .Text1 p {
+    .Text1 h1 {
         margin: 0;
     }
     
     .Text2 {
         font-size: 30px;
-        width: 30%;
+        max-width: 240px;
+        margin-top: 0;
     }
 
     .products h2 {
@@ -741,7 +733,7 @@ form p {
         max-width: 65%;
     }
 
-    .latest p {
+    .latest h2 {
         margin-top: -40px;
         margin-left: 40px;
         font-size: 60px;
@@ -793,13 +785,17 @@ form p {
     .navbarExpanded {
         display: none !important;
     }
+
+    .IconMobile {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .Icon {
+
+    .IconMobile {
         top: 30px;
-        left: 40px;
+        margin-left: 40px;
         position: absolute;
         display: inline;
         background-color: #19272D;
@@ -807,25 +803,31 @@ form p {
         border-radius: 50%;
     }
 
-    .Icon img {
-        content: url(Assets/Imgs/Background/iconMae1x.png);
+    .topnavMain {
+        display: none;
     }
 
     .miniNavbar {
         display: block;
     }
 
-    .topnav {
+    .topnav-right {
         display: none;
     }
 
     .containerText {
         margin-top: 150px;
+        margin-left: 40px;
+    }
+
+    .Text1 {
+        font-size: 20px;
+        max-width: 300px;
     }
     
     .Text2 {
-        width: 80%;
-        font-size: 30px;
+        font-size: 25px;
+        max-width: 200px;
     }
 
     #header2-1 {
@@ -840,7 +842,7 @@ form p {
     }
 
     .containerMini {
-        margin: 32px 20px !important;
+        margin: 30px 20px !important;
         background-color: transparent;
     }
 
@@ -967,6 +969,10 @@ form p {
     
     #buttonSend {
         width: 25%;
+    }
+
+    .footer {
+        margin: 0;
     }
     
     .footerDiv {
