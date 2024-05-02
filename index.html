@@ -383,16 +383,19 @@
             <p>CONTACTE-NOS</p>
 
             <div class="inputFields">
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" name="nameForm">
                 <div class="emailtelFields">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Telefone">
+                    <input type="email" placeholder="Email" name="emailForm">
+                    <input type="tel" placeholder="Telefone" name="telForm">
                 </div>
 
-                <textarea placeholder="Mensagem" rows="6"></textarea>
+                <textarea placeholder="Mensagem" rows="6" name="msgForm"></textarea>
             </div>
             
-            <input type="submit" value="ENVIAR" id="buttonSend">
+            <input value="ENVIAR" id="btnSendForm" readonly onclick="sendForm()">
+
+            <p id="formMsgConfirm">Mensagem enviada com sucesso!</p>
+            <p id="formMsgDeny">Mensagem enviada sem sucesso!</p>
 
         </form>
         <div class="footer">

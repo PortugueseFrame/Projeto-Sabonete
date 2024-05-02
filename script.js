@@ -24,6 +24,7 @@ function scrollToBottom(timedelay=0) {
     }, timedelay);           
 }
 
+
 document.querySelectorAll('.buttonToggle').forEach(function(button) {
     button.addEventListener('click', function() {
         var contentToggle = this.closest('.itemGroup').querySelector('.contentToggle');
@@ -47,7 +48,6 @@ document.querySelectorAll('.buttonToggle').forEach(function(button) {
 });
 
 
-
 function toggleForm() {
     var form = document.getElementsByTagName('form')[0];
 
@@ -57,7 +57,63 @@ function toggleForm() {
 document.addEventListener('click', function(event) {
     var form = document.getElementsByTagName('form')[0];
     var target = event.target;
+
     if (target !== form && !form.contains(target) && target.tagName.toLowerCase() !== 'a') {
         form.style.display = 'none';
+        var msgConfirm = document.getElementById('formMsgConfirm');
+        var msgDeny = document.getElementById('formMsgDeny');
+        msgConfirm.style.display = 'none';
+        msgDeny.style.display = 'none';
     }
+
 });
+
+
+function sendForm() {
+    var nameForm = document.querySelector('input[name="nameForm"]').value;
+    var emailForm = document.querySelector('input[name="emailForm"]').value;
+    var telForm = document.querySelector('input[name="telForm"]').value;
+    var msgForm = document.querySelector('textarea[name="msgForm"]').value;
+
+    if (nameForm === '' || emailForm === '' || telForm === '' || msgForm === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false;
+    }
+
+    fetch('http://localhost/Projeto-Sabonete/formSubmit.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nameForm: nameForm,
+            emailForm: emailForm,
+            telForm: telForm,
+            msgForm: msgForm,
+        }),
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Success in Data Upload');
+            document.getElementById('formMsgConfirm').style.display = 'block';
+
+            document.querySelector('input[name="nameForm"]').value = '';
+            document.querySelector('input[name="emailForm"]').value = '';
+            document.querySelector('input[name="telForm"]').value = '';
+            document.querySelector('textarea[name="msgForm"]').value = '';
+
+        } else {
+            console.log('Error in Data Upload');
+            document.getElementById('formMsgDeny').style.display = 'block';
+
+            document.querySelector('input[name="nameForm"]').value = '';
+            document.querySelector('input[name="emailForm"]').value = '';
+            document.querySelector('input[name="telForm"]').value = '';
+            document.querySelector('textarea[name="msgForm"]').value = '';
+
+        }
+    })
+    .catch(error => {
+        console.error('Error in Fetch API', error);
+    });
+}

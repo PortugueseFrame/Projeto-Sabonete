@@ -543,6 +543,13 @@ form input, textarea {
     margin: 5px;
 }
 
+textarea {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    color: #2F5462;
+}
+
 form p {
     font-family: 'Gotham';
     font-weight: 500;
@@ -569,7 +576,7 @@ form p {
     grid-auto-rows: auto;
 }
 
-#buttonSend {
+#btnSendForm {
     width: 10%;
     height: 30px;
     background-color: #2E606F;
@@ -580,6 +587,23 @@ form p {
     font-family: 'Gotham';
     font-weight: 500;
     font-size: 12px;
+    text-align: center;
+}
+
+#formMsgConfirm {
+    display: none;
+    color: green;
+    margin-bottom: 15px;
+    margin-top: 0;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+#formMsgDeny {
+    display: none;
+    color: red;
+    margin-bottom: 15px;
+    margin-top: 0;
+    animation: fadeIn 0.25s ease-in-out;
 }
 
 .footerDiv {
