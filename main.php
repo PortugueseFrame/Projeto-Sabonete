@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+    <?php require 'display.php'; ?>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -77,7 +79,10 @@
         <div class="containerBig">
             <div class="containerMini">
                 <div class="infoProduct" id="prodYellow">
-                    <img src="Assets/Imgs/Produtos/prodAmarelo.png" id="img1">
+                    <?php 
+                        $id_prod = 1;
+                        displayProduct($id_prod);
+                    ?>
                     <div class="txtProduct">
                         <p>Sabonete de Mel e Cera de Abelha</p>
                         <div class="price">
@@ -93,7 +98,10 @@
             </div>
             <div class="containerMini">
                 <div class="infoProduct" id="prodPurple">
-                    <img src="Assets/Imgs/Produtos/prodRoxo.png" id="img2">
+                    <?php 
+                        $id_prod = 2;
+                        displayProduct($id_prod);
+                    ?>
                     <div class="txtProduct">
                         <p>Sabonete Alfazema e Erva Príncipe</p>
                         <div class="price">
@@ -110,7 +118,10 @@
             </div>
             <div class="containerMini">
                 <div class="infoProduct" id="prodRed">
-                    <img src="Assets/Imgs/Produtos/prodVermelho.png" id="img3">
+                    <?php 
+                        $id_prod = 3;
+                        displayProduct($id_prod);
+                    ?>
                     <div class="txtProduct">
                         <p>Sabonete de Groselha Preta e Folha de Tomate</p>
                         <div class="price">
@@ -127,7 +138,10 @@
             </div>
             <div class="containerMini">
                 <div class="infoProduct" id="prodGreen">
-                    <img src="Assets/Imgs/Produtos/prodVerde.png" id="img4">
+                    <?php 
+                        $id_prod = 4;
+                        displayProduct($id_prod);
+                    ?>
                     <div class="txtProduct">
                         <p>Sabonete de Chá Verde e Sândalo</p>
                         <div class="price">
