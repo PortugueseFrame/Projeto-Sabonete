@@ -22,11 +22,11 @@
         <div class="topnavMain">
 
             <div class="Icon">
-                <img src="Assets/Imgs/Background/iconMae21x.png">
+                <img src="assets/imgs/background/iconmae21x.png">
             </div>
 
             <div class="topnav-left">
-                <img src="Assets/Imgs/Background/iconMae1x.png">
+                <img src="assets/imgs/background/iconmae1x.png">
             </div>
 
             <div class="topnav-right">
@@ -40,11 +40,11 @@
         <div class="topnavMobile">
 
             <div class="IconMobile">
-                <img src="Assets/Imgs/Background/iconMae1x.png">
+                <img src="assets/imgs/background/iconmae1x.png">
             </div>
 
             <div class="miniNavbar" id="miniNavbar" onclick="toggleNavbar()">
-                <img src="Assets/Imgs/Background/iconNav1x.png">
+                <img src="assets/imgs/background/iconnav1x.png">
             </div>
             
             <div class="navbarExpanded" id="navbarExpanded">
@@ -262,35 +262,35 @@
 
         <div class="miniProducts">
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodMelancia.png">
+                <img src="assets/imgs/products/prodmelancia.png">
                 <div class="bottom-left">Bálsamos Labial Melancia</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodMae.png">
+                <img src="assets/imgs/products/prodmae.png">
                 <div class="bottom-left">Sabonete Sea Lover</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodToranja.png">
+                <img src="assets/imgs/products/prodtoranja.png">
                 <div class="bottom-left">Shampoo Sólido para Cabelos Normais</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodTomilho.png">
+                <img src="assets/imgs/products/prodtomilho.png">
                 <div class="bottom-left">Sabonete de Azeite Biológico de Tomilho</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodIncenso.png">
+                <img src="assets/imgs/products/prodincenso.png">
                 <div class="bottom-left">Shampoo Sólido para Cabelo e Barba</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodTodosS.png">
+                <img src="assets/imgs/products/prodtodosx.png">
                 <div class="bottom-left">Kit Miniaturas Sabonetes Clássicos</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodBalm.png">
+                <img src="assets/imgs/products/prodbalm.png">
                 <div class="bottom-left">Wonder Balm</div>
             </div>
             <div class="imgContainer">
-                <img src="Assets/Imgs/Produtos/prodBalsamo.png">
+                <img src="assets/imgs/products/prodbalsamo.png">
                 <div class="bottom-left">Bálsamo Labial Lima</div>
             </div>    
         </div>
@@ -432,15 +432,15 @@
                 <div class="infoFooter" id="socialNet">
                     <p id="infoFooterTitle">Redes Sociais</p>
                     <div class="socialNetDiv">
-                        <img src="Assets/Imgs/Social Network/iconFB.png">
-                        <img src="Assets/Imgs/Social Network/iconYT.png">
-                        <img src="Assets/Imgs/Social Network/iconIG.png">
+                        <img src="assets/imgs/socialnetwork/iconfb.png">
+                        <img src="assets/imgs/socialnetwork/iconyt.png">
+                        <img src="assets/imgs/socialnetwork/iconig.png">
                     </div>
                 </div>
             </div>
             <div class="copyrightDiv">
                 <p>© 2023 MÃEBODYCARE. Todos os direitos reservados</p>
-                <img src="Assets/Imgs/Background/pwrdMindshaker.png">
+                <img src="assets/imgs/background/pwrdmindshaker.png">
             </div>
         </div>
     </footer>

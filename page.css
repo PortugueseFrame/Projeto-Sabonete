@@ -1,32 +1,32 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('Assets/Fonts/Gotham/GothamHTF-Book.woff2') format('woff2'),
-        url('Assets/Fonts/Gotham/GothamHTF-Book.woff') format('woff');
+    src: url('assets/fonts/gotham/gothamhtf-book.woff2') format('woff2'),
+        url('assets/fonts/gotham/gothamhtf-book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('Assets/Fonts/Gotham/GothamHTF-Black.woff2') format('woff2'),
-        url('Assets/Fonts/Gotham/GothamHTF-Black.woff') format('woff');
+    src: url('assets/fonts/gotham/gothamhtf-black.woff2') format('woff2'),
+        url('assets/fonts/gotham/gothamhtf-black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('Assets/Fonts/Gotham/GothamHTF-Bold.woff2') format('woff2'),
-        url('Assets/Fonts/Gotham/GothamHTF-Bold.woff') format('woff');
+    src: url('assets/fonts/gotham/gothamhtf-bold.woff2') format('woff2'),
+        url('assets/fonts/gotham/gothamhtf-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('Assets/Fonts/Gotham/GothamHTF-Medium.woff2') format('woff2'),
-        url('Assets/Fonts/Gotham/GothamHTF-Medium.woff') format('woff');
+    src: url('assets/fonts/gotham/gothamhtf-medium.woff2') format('woff2'),
+        url('assets/fonts/gotham/gothamhtf-medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .Intro {
-    background-image: url('Assets/Imgs/Background/bgMain2x.png');
+    background-image: url('assets/imgs/background/bgmain2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -297,7 +297,7 @@ body {
 }
 
 .kitProducts {
-    background-image: url('Assets/Imgs/Background/prodTodos.png');
+    background-image: url('assets/imgs/background/prodtodos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -688,7 +688,7 @@ form p {
     }
 
     .Intro {
-        background-image: url('Assets/Imgs/Background/bgIpad.png');
+        background-image: url('assets/imgs/background/bgipad.png');
     }
 
     .containerText {
@@ -744,7 +744,7 @@ form p {
     }
 
     .kitProducts {
-        background-image: url('Assets/Imgs/Background/prodTodos820.png');
+        background-image: url('assets/imgs/background/prodtodos820.png');
         height: 90vh;
     }
 

@@ -80,7 +80,7 @@ function sendForm() {
         return false;
     }
 
-    fetch('http://localhost/Projeto-Sabonete/formSubmit.php', {
+    fetch('http://localhost/project-soap/formsubmit.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
